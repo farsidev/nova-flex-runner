@@ -1,0 +1,54 @@
+{
+    "name": "farsi/nova-flex-runner",
+    "description": "A powerful, customizable command runner and log viewer for Laravel Nova 4, developed by Farsi Studio.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "artisan",
+        "commands",
+        "jobs",
+        "shell",
+        "tool"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Sameni",
+            "email": "contact@farsistudio.com",
+            "homepage": "https://farsistudio.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0",
+        "laravel/nova": "^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0",
+        "pestphp/pest": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Farsi\\NovaFlexRunner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Farsi\\NovaFlexRunner\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Farsi\\NovaFlexRunner\\NovaFlexRunnerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
